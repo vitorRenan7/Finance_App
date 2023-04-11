@@ -1,0 +1,7 @@
+{
+  "name": "MoneyMaster",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
