@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+main{
+    background-color: #3232CD;
+    width: 100%;
+    height: 100%;
+
+    #container{
+        background-image: url(../../assets/LOGIN.svg); 
+        margin-top: 5vh;  
+        width: 400px;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #buttons{
+        position: absolute;
+        width: 100%;
+        height: 25vh;
+        top: 65vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buttons ion-button{
+        position: relative;
+        margin-top: 2vh;
+        padding: 1vh;
+        height: 361px;
+        height: 63px;
+    }
+
+    ion-button{
+        --ion-color-primary: #F5F5F5;
+    }
+
+    .btn-cadastrar, .btn-login{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #3232CD;
+        font-family: 'ABeeZee', sans-serif;
+    }
+}
