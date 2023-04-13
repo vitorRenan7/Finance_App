@@ -18,4 +18,8 @@ export const routes: Routes = [
     path: 'opcao-login',
     loadComponent: () => import('./opcao-login/opcao-login.page').then( m => m.OpcaoLoginPage)
   },
+  {
+    path: 'cadastro',
+    loadComponent: () => import('./cadastro/cadastro.page').then( m => m.CadastroPage)
+  },
 ];
