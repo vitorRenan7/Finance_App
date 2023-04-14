@@ -1,0 +1,52 @@
+<main id="container">
+
+  <div id="header">
+
+    <ion-img (click)="redirecionarOpcaoLogin()" src="../../assets/icon/left-arrow.png" class="seta"></ion-img>
+    <img src="../../assets/NomeApp.png"         alt="logoApp"     class="logoApp">
+
+  </div>
+
+  <div id="body">
+
+    <div class="form-group">
+
+      <form class="form-login">
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+
+              <div class="campo-email">
+                <label for="email">Email</label>
+                <ion-input placeholder="Digite seu e-mail"></ion-input>
+              </div>
+
+
+              <div class="campo-senha">
+                <label for="senha">Senha</label>
+                <ion-input type="password" placeholder="Digite seu e-mail"></ion-input>
+                <span class="esqueceu-senha"> <ion-router-link href="#"> Esqueceu sua senha? </ion-router-link> </span>
+              </div>
+
+              <ion-button class="btn-entrar"> Entrar </ion-button>
+              
+              <div class="campo-criar-conta">
+                <span class="criar-conta"> Não tem uma conta? <ion-router-link href="/cadastro"> Inscreva-se </ion-router-link> </span>
+              </div>
+
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </form>
+
+    </div>
+
+
+  </div>
+
+ 
+  
+</main>

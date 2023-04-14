@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+#container{
+    background-color: #3232CD;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+
+
+
+    #header{
+        height: 25vh;
+        width: 100%;
+
+        overflow: hidden;
+        box-sizing: border-box;
+
+        .seta{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 17px;
+            top: 28px;
+        }
+
+        .logoApp{
+            position: absolute;
+            width: 345px;
+            height: 64px;
+            left: 8vh;
+            top: 6vh;
+        }
+    }
+
+    #body{
+        height: 100%;
+        width: 100%;
+
+        overflow: hidden;
+        box-sizing: border-box;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-group{
+            width: 90%;
+            height: 90%;
+
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+
+            ion-grid{
+                background-color: #3232CD;
+                margin-top: 3vh;
+            }
+
+            .campo-email{
+                margin-top: 1vh;
+            }
+
+            .campo-senha{
+                margin-top: 3vh;
+            }
+
+            .campo-email, .campo-senha{
+
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    margin-top: 1vh;
+                    
+                    padding-left: 2vh;
+
+                    font-family: 'ABeeZee';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5vh;
+                    line-height: 26px;
+
+                    color: #FFFFFF;
+
+
+                }
+            }
+
+                ion-input{
+                    background-color: white;
+                    margin-top: 2vh;
+
+                    background: #F5F5F5;
+                    border-radius: 10px;
+                }
+
+                .esqueceu-senha{
+                    padding-right: 4vh;
+                    padding-top: 2vh;
+
+                    font-family: 'ABeeZee';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: right;
+                }
+
+                ion-router-link{
+                    text-decoration: none;
+                    color: #FFFFFF;
+                }
+
+                ion-button{                                    
+                    background: #F5F5F5;
+                    mix-blend-mode: normal;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 25px;
+
+                    --ion-color-primary: #F5F5F5;
+                }
+            
+                .btn-entrar{
+                    margin-top: 15vh;
+
+                    width: 100%;
+                    height: 5vh;
+
+                    font-family: 'ABeeZee', sans-serif;
+                    font-size: 25px;
+                    font-weight: 400;
+
+                    text-align: center;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+
+                    color: #3232CD;
+                }
+
+                .campo-criar-conta{
+                    margin-top: 5vh;
+    
+                    display: flex;
+                    flex-direction: column;
+
+                    .criar-conta{
+                        width: 100%;
+    
+    
+                        font-family: 'ABeeZee';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+
+                        text-align: center;    
+                        line-height: 21px;
+    
+                        color: #FFFFFF;
+                    }
+                }
+        }
+    }
+}
