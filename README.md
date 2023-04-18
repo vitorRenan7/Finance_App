@@ -1,10 +1,12 @@
-## Nome do Projeto
-Controle de Gastos
+# Nome do Projeto
 
-## Descrição
+## MoneyMaster
+
+# Descrição
+
 Este é um aplicativo em Ionic que ajuda a gerenciar os gastos pessoais. Com ele, os usuários podem adicionar despesas, categorizá-las e visualizar relatórios.
 
-## Recursos
+# Recursos
 - Adição de Despesas
 - Categorização de Despesas
 - Relatórios
@@ -20,16 +22,12 @@ Este é um aplicativo em Ionic que ajuda a gerenciar os gastos pessoais. Com ele
   request com suas alterações.
 
 
-## Autor
+# Autor
 
-# Vitor Renan Xavier Valentim da Silva
+## Vitor Renan Xavier Valentim da Silva
 
-## Licença
+# Licença
 
 Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais informações.
 
-## Screenshots
-
-Inclua screenshots do seu aplicativo para mostrar como ele se parece em ação. Você pode adicionar isso como uma seção separada ou incluí-las nas seções de Recursos ou Descrição.
-
-Espero que essas sugestões ajudem a criar um README útil e informativo para seu projeto em Ionic
+# Screenshots
