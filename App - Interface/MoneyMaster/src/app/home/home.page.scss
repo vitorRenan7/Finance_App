@@ -76,36 +76,88 @@ ion-content {
 
         overflow: hidden;
 
-        width:  95%;
-        height: 12vh;
-        background-color: red;
+        width:  97%;
+        height: 11vh;
+        background-color: #F5F5F5;
 
         border-radius: 100px;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
 
         .relatorio{
-          margin-top: 0.5vh;
-          margin-left: 4%;
+          margin-top: 1vh;
 
-
-          background-image: url(../../assets/icon/lucro.png);
+          background-image: url(../../assets/icon/relatorio-financeiro.png);
           background-repeat: no-repeat;
-          background-position: 5px;
+          background-size: 82%;
+          background-position: 9.5px center;
 
-          width:  70px;
-          height: 70px;
-          background-color: white;
+          width:  55px;
+          height: 55px;
 
           border-radius: 50px;
         }
 
         .ganhos{
-          width: 10vh;
-          height: 10vh;
-          background-color: black;
+          margin-top: 1vh;
+
+          background-image: url(../../assets/icon/investidor.png);
+          background-repeat: no-repeat;
+          background-size: 80%;
+          background-position: 5px center;
+
+
+          width:  55px;
+          height: 55px;
+
+          border-radius: 50px;
         }
+
+        .home{
+          margin-top: 1vh;
+
+          background-image: url(../../assets/icon/lucro.png);
+          background-repeat: no-repeat;
+          background-size: 80%;
+          background-position: 5px center;
+
+          width:  60px;
+          height: 60px;
+          background-color: #FFFFFF;
+
+          border-radius: 50px;
+        }
+
+        .gastos{
+          margin-top: 1vh;
+
+          background-image: url(../../assets/icon/despesas.png);
+          background-repeat: no-repeat;
+          background-size: 75%;
+          background-position: 7px center;
+
+          width:  55px;
+          height: 55px;
+
+          border-radius: 50px;
+        }
+
+        .configuracoes{
+          margin-top: 1vh;
+
+          background-image: url(../../assets/icon/user.png);
+          background-repeat: no-repeat;
+          background-size: 80%;
+          background-position: 6px center;
+
+          width:  55px;
+          height: 55px;
+
+          border-radius: 50px;
+        }
+
       
 
       }
