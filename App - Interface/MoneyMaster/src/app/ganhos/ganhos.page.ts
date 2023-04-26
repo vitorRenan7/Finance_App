@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-ganhos',
@@ -12,9 +12,24 @@ import { IonicModule } from '@ionic/angular';
 })
 export class GanhosPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
+  }
+  pageRelatorio(){
+    this.navCtrl.navigateRoot('/relatorio')
+  }
+  pageGanhos(){
+    this.navCtrl.navigateRoot('/ganhos')
+  }
+  pageHome(){
+    this.navCtrl.navigateRoot('/home')
+  }
+  pageGastos(){
+    this.navCtrl.navigateRoot('/gastos')
+  }
+  pageconfiguracoes(){
+    this.navCtrl.navigateRoot('/configuracao')
   }
 
 }
