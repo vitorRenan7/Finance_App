@@ -1,20 +1,55 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+    <div id="body">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+        <!-- HEADER -->
+        <div class="header">
+            <ion-img src="../../assets/NomeApp.png" class="imgApp"></ion-img>
+        </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+        <!-- CAMPO DO VALOR  -->
+        <div class="valor">
+            <div class="texto-valor">
+                <span>TOTAL GANHOS / GASTOS</span>
+            </div>
+
+            <div class="campo-valor">
+                <div class="total">
+                    <span>500</span>
+                </div>
+                <div class="button">
+                    <ion-fab>
+                        <ion-fab-button>
+                          <ion-icon name="add"></ion-icon>
+                        </ion-fab-button>
+                      </ion-fab>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CAMPO DO FILTRO -->
+        <div class="filtro">
+            <div class="texto-filtro">
+                <span> Movimentações </span>
+            </div>
+            <div class="img-filtro">
+                <ion-img src="../../assets/icon/ordenar.png"></ion-img>
+            </div>
+        </div>
+
+        <!-- CAMPO DAS TRANSAÇÕES -->
+        <div class="transacoes"></div>
+
+        <!-- CAMPO DO MENU -->
+        <div class="menu">
+            <div class="buttons">
+                <button class="relatorio"     (click)="pageRelatorio()"></button>
+                <button class="ganhos"        (click)="pageGanhos()"></button>
+                <button class="home"          (click)="pageHome()"></button>
+                <button class="gastos"        (click)="pageGastos()"></button>
+                <button class="configuracoes" (click)="pageConfiguracoes()"></button>
+                
+            </div>
+        </div>
+    </div>
 </ion-content>

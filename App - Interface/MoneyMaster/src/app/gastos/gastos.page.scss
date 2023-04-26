@@ -1,0 +1,161 @@
+#body{
+    width:  100%;
+    height: 100%;
+    background-color: #E54B4B;
+
+    display: flex;
+    flex-direction: column;
+
+    #header{
+        width: 100%;
+        height: 22vh;
+        background-color: #3232CD;
+
+        .imgApp{
+            margin-top: 2vh;
+            margin-left: 6vh;
+        }
+    }
+
+    #add-gastos{
+        margin-top: 13vh;
+        margin-left: 4vh;
+        position: absolute;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width:  45vh;
+        height: 17vh;
+        background-color: #FFFFFF;
+
+        border-radius: 50px;
+        gap: 60px;
+
+        span{
+            font-family: 'Roboto Mono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 59px;
+            color: #E54B4B;
+        }
+
+        .button{
+            width:  10vh;
+            height: 10vh;
+        }
+    }
+
+    .historico-gastos{
+        width:  100%;
+        height: 63vh;
+    }
+
+    #menu{
+        margin-top: 1vh;
+  
+        width: 100%;
+        height: 14vh;
+        background-color: #3232CD;
+  
+        overflow: hidden;
+        box-sizing: border-box;
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .buttons{
+          margin-top: 0.5vh;
+  
+          overflow: hidden;
+  
+          width:  97%;
+          height: 11vh;
+          background-color: #F5F5F5;
+  
+          border-radius: 100px;
+  
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+  
+          .relatorio{
+            margin-top: 1vh;
+  
+            background-image: url(../../assets/icon/relatorio-financeiro.png);
+            background-repeat: no-repeat;
+            background-size: 82%;
+            background-position: 9.5px center;
+  
+            width:  55px;
+            height: 55px;
+  
+            border-radius: 50px;
+          }
+  
+          .ganhos{
+            margin-top: 1vh;
+  
+            background-image: url(../../assets/icon/investidor.png);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 5px center;
+  
+  
+            width:  55px;
+            height: 55px;
+  
+            border-radius: 50px;
+          }
+  
+          .home{
+            margin-top: 1vh;
+  
+            background-image: url(../../assets/icon/lucro.png);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 5px center;
+  
+            width:  60px;
+            height: 60px;
+            background-color: #FFFFFF;
+  
+            border-radius: 50px;
+          }
+  
+          .gastos{
+            margin-top: 1vh;
+  
+            background-image: url(../../assets/icon/despesas.png);
+            background-repeat: no-repeat;
+            background-size: 75%;
+            background-position: 7px center;
+  
+            width:  55px;
+            height: 55px;
+  
+            border-radius: 50px;
+          }
+  
+          .configuracoes{
+            margin-top: 1vh;
+  
+            background-image: url(../../assets/icon/user.png);
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: 6px center;
+  
+            width:  55px;
+            height: 55px;
+  
+            border-radius: 50px;
+          }
+  
+        
+  
+        }
+      }
+}

@@ -1,0 +1,45 @@
+<main id="container">
+
+  <div id="header">
+
+    <ion-img (click)="redirecionarOpcaoLogin()" src="../../assets/icon/left-arrow.png" class="seta"></ion-img>
+    <img src="../../assets/NomeApp.png"         alt="logoApp"     class="logoApp">
+
+  </div>
+
+  <div id="body">
+
+    <div class="form-group">
+
+      <form class="form-login">
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+
+              <div class="campo-nome">
+                <label for="nome"> Nome </label>
+                <ion-input placeholder="Digite seu nome"></ion-input>
+              </div>
+
+              <ion-button class="btn-cadastro"> cadastro </ion-button>
+              
+              <div class="campo-entrar-conta">
+                <span class="entrar-conta"> Já tem uma conta? <ion-router-link href="/cadastro"> Entrar </ion-router-link> </span>
+              </div>
+
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </form>
+
+    </div>
+
+
+  </div>
+
+ 
+  
+</main>
