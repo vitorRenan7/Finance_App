@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-opcao-login',
@@ -12,9 +12,18 @@ import { IonicModule } from '@ionic/angular';
 })
 export class OpcaoLoginPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
+  
+  pageCadastro(){
+    this.navCtrl.navigateRoot('/cadastro')
+  }
+  
+  pageLogin(){
+    this.navCtrl.navigateRoot('/login')
+  }
+  
 
 }
