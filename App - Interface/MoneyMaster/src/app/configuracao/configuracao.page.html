@@ -1,22 +1,24 @@
 <ion-content [fullscreen]="true">
   <div id="body">
 
-    <div class="aviso">
+    <div id="header">
       <ion-img src="../../assets/NomeApp.png" class="imgApp"></ion-img>
     </div>
 
-    <div class="mensagem">
-      <h2>PÁGINA EM CONSTRUÇÃO</h2>
-      <br>
-      <br>
-      <span>Que pena, infelizmente essa página não está pronta.
-        Mas em breve ficará
-      </span>
+    <div id="campo-buttons">
+      <div class="config-menu">
+        <button class="config-usuario"> Configurações do Usuário </button>
+        <button class="config-conta">   Configurações da Conta   </button>
+        <button class="alterar-idioma"> Alterar Idioma           </button>
+        <button class="alterar-modo">   Modo Escuro              </button>
+        <button class="perguntas">      Perguntas Frequentes     </button>
+        <button class="sair">           Sair da Conta            </button>
+      </div>
     </div>
 
     <ion-footer>
       <div id="menu">
-        <div class="buttons">
+        <div class="buttons-menu">
           <button class="relatorio"     (click)="pageRelatorio()"></button>
           <button class="ganhos"        (click)="pageGanhos()"></button>
           <button class="home"          (click)="pageHome()"></button>
@@ -25,6 +27,7 @@
         </div>
       </div>
     </ion-footer>
+    
 
   </div>
 </ion-content>
