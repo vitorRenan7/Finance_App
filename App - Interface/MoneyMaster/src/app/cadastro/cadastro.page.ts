@@ -16,13 +16,30 @@ import { RouterModule } from '@angular/router';
 })
 export class CadastroPage implements OnInit {
 
+  nomeUsuario!: string;
+  erroNome: string = ''; // Adicionando valor padrão
+  botaoAtivo: boolean = false;
+
   constructor(private navCtrl: NavController) {}
 
   ngOnInit() {
   }
 
-  redirecionarOpcaoLogin(){
+  pageOpcaoLogin(){
     this.navCtrl.navigateRoot('/opcao-login');
   }
 
+  validarNome(){
+    if (this.nomeUsuario && this.nomeUsuario.length < 2){
+      this.erroNome = 'O nome deve ter pelo menos duas letras';
+    } else if (/\d/.test(this.nomeUsuario)){
+      // /\d\ = Expressão regular para dectar números
+      this.erroNome = 'O nome não pode conter números';
+    } else {
+      this.erroNome = '';
+      this.botaoAtivo = true;
+    }
+  }
+
+  
 }

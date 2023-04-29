@@ -2,7 +2,7 @@
 
   <div id="header">
 
-    <ion-img (click)="redirecionarOpcaoLogin()" src="../../assets/icon/left-arrow.png" class="seta"></ion-img>
+    <ion-img (click)="pageOpcaoLogin()" src="../../assets/icon/left-arrow.png" class="seta"></ion-img>
     <img src="../../assets/NomeApp.png"         alt="logoApp"     class="logoApp">
 
   </div>
@@ -19,13 +19,23 @@
 
               <div class="campo-nome">
                 <label for="nome"> Nome </label>
-                <ion-input placeholder="Digite seu nome"></ion-input>
+                <ion-input 
+                type="text"
+                placeholder="Digite seu nome"
+                [(ngModel)]="nomeUsuario"
+                (ionInput)="validarNome()"
+                name="inputValue"
+                autofocus="false"
+                ></ion-input>
+
+                <p *ngIf="erroNome">{{erroNome}}</p>
+
               </div>
 
-              <ion-button class="btn-cadastro"> cadastro </ion-button>
+              <ion-button class="btn-cadastro" [disabled]="!botaoAtivo" routerLink='/'> Cadastro </ion-button>
               
               <div class="campo-entrar-conta">
-                <span class="entrar-conta"> Já tem uma conta? <ion-router-link href="/cadastro"> Entrar </ion-router-link> </span>
+                <span class="entrar-conta"> Já tem uma conta? <ion-router-link href="/login"> Entrar </ion-router-link> </span>
               </div>
 
 
