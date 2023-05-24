@@ -19,7 +19,7 @@ export class SplashPage implements OnInit {
 
   ionViewDidEnter(){
     setTimeout(() => {
-      this.router.navigateByUrl("opcao-login");
+      this.router.navigateByUrl("home");
     }, 2500)
   }
 
